@@ -1,4 +1,3 @@
 
-
-{"name":"doviz-final","version":"1.0.0","main":"bot.js","scripts":{"start":"node http://bot.js"},"engines":{"node":"18.x"},"dependencies":{"express":"4.18.2","whatsapp-web.js":"1.23.0","qrcode-terminal":"0.12.0"}}
+{"name":"doviz-final","version":"1.0.0","main":"bot.js","scripts":{"start":"node http://bot.js"},"dependencies":{"express":"4.18.2","whatsapp-web.js":"1.23.0","qrcode-terminal":"0.12.0","puppeteer":"^19.0.0"}}
 
