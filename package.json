@@ -1,11 +1,8 @@
 {
-  "name": "doviz-bot",
+  "name": "bot",
   "version": "1.0.0",
   "main": "bot.js",
   "scripts": {
     "start": "node bot.js"
-  },
-  "dependencies": {
-    "express": "^4.18.2"
   }
 }
