@@ -1,1 +1,5 @@
-const express=require('express');const app=express();const PORT=process.env.PORT||10000;app.get('/',(req,res)=>res.send('Bot is Running'));app.listen(PORT,()=>console.log('Web OK on '+PORT));const {Client,LocalAuth}=require('whatsapp-web.js');const qrcode=require('qrcode-terminal');const client=new Client({authStrategy:new LocalAuth(),puppeteer:{headless:true,args:['--no-sandbox','--disable-setuid-sandbox','--disable-dev-shm-usage','--no-first-run','--no-zygote','--single-process','--disable-gpu']}});client.on('qr',qr=>{qrcode.generate(qr,{small:true});console.log('QR_CODE:'+qr);});client.on('ready',()=>console.log('Bot Ready!'));client.on('message',async msg=>{const t=msg.body.toLowerCase();if(t.includes('سعر')||t.includes('دولار')||t.includes('dolar')||t.includes('eur')||t.includes('altin')){await http://msg.reply('💰 مرحبا! تابع اسعار الدولار والذهب لحظة بلحظة:\nhttps://sp-today.com\n\nارسل كلمة سعر للقائمة');}});client.initialize();
+const express=require('express');
+const app=express();
+const PORT=process.env.PORT||10000;
+app.get('/',(req,res)=>res.send('Bot is Live - Doviz Final Working!'));
+app.listen(PORT,()=>console.log('Server live on '+PORT));
